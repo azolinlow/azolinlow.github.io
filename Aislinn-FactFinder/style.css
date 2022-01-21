@@ -1,0 +1,93 @@
+/*
+FBF8CC . FDE4CF . FFCFD2 . F1C0E8 = pastel theme
+
+EDEDE9 . D6CCC2 . F5EBE0 . E3D5CA = toasted marshmallow theme
+
+7F4F24 . 936639 . A4AC86 . 656D4A = forest theme -- changed
+
+possible font color : #696969
+
+*/
+
+html{
+	height: 100%;	
+}
+main{
+	width: 1000px;
+	height: 700px;
+	display: grid;
+	grid-template-rows: 100px auto;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-color: #787878;
+}
+section{
+	border: 4px solid #6b6b6b;
+	font-family: 'Comic Sans MS';
+	font-size: 15pt;
+	color: black;
+	padding: 20px;
+	background-color: #ededed;
+}
+#turtle{
+	width: 300px;
+}
+#flamingo{
+	width: 300px;
+}
+#paintbucket{
+	width: 300px;
+	float:right;
+}
+#pizza{
+	width: 300px;
+}
+#frootloops{
+	width:300px;
+}
+#menu{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	padding: 15px;
+	grid-gap: 10px;
+}
+#menu > input{
+	font-family: 'Comic Sans MS';
+	font-size: 15pt;
+	color: #696969;
+	background-color: #ededed;
+}
+#menu > input:hover{
+	background-color: #bfbfbf;
+	font-size: 18pt;
+	color: black;
+}
+#theme{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 15px;
+	grid-gap: 10px;
+	height: 50px;
+}
+#theme > input{
+	font-family: 'Comic Sans MS';
+	font-size: 15pt;
+	color: #696969;
+	background-color: #ededed;
+}
+#theme > input:hover{
+	background-color: #bfbfbf;
+	font-size: 18pt;
+	color: black;
+}
+#currentTheme{
+	position: absolute;
+	top: 100px;
+	font-family: 'Comic Sans MS';
+	font-size: 15pt;
+	color: #696969;
+}
