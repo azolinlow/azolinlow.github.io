@@ -1,7 +1,6 @@
 document.querySelector('#a').addEventListener("click",factOne);
 
 function factOne(){
-	
 	document.getElementById('factbox').innerHTML = "The oldest-known living land animal is a tortoise named Jonathan, who is 187 years old. He was born in 1832 and has lived on the island of St. Helena in the Atlantic Ocean since 1882.";
 	
 	document.querySelector('#factbox').innerHTML += "<img src='images/turtle.jpg' alt='Picture of a tortise' id='turtle'>";
@@ -56,17 +55,16 @@ function pastelTheme(){
 	document.querySelector('#currentTheme').innerHTML = "Currently using Pastel Theme";
 	document.querySelector('body').style.backgroundColor = "#fbf8cc";
 	
-	for(var i = 0 ; i < menubuttons.length ; i++){
-		menubuttons[i].style.backgroundColor = "#F1C0E8";
-	}
-	
 	document.querySelector('#factbox').style.backgroundColor = "#FDE4CF";
 	document.querySelector('#factbox').style.borderColor = "#edc8a8";
 	
+	for(var i = 0 ; i < menubuttons.length ; i++){
+		menubuttons[i].style.backgroundColor = "#F1C0E8";
+	}//for
 	for(var i = 0 ; i < themebuttons.length ; i++){
 		themebuttons[i].style.backgroundColor = "#FFCFD2";
-	}
-
+	}//for
+	
 }//pasteltheme
 
 document.querySelector('#marshmallow').addEventListener("click",marshmallowTheme);
@@ -82,16 +80,16 @@ function marshmallowTheme(){
 	
 	document.querySelector('body').style.backgroundColor = "#EDEDE9";
 	
-	for(var i = 0 ; i < menubuttons.length ; i++){
-		menubuttons[i].style.backgroundColor = "#D6CCC2";
-	}
-	for(var i = 0 ; i < themebuttons.length ; i++){
-		themebuttons[i].style.backgroundColor = "#e3d5ca";
-	}
-	
 	document.querySelector('#factbox').style.backgroundColor = "#F5EBE0";
 	document.querySelector('#factbox').style.borderColor = "#dbcdbd";
-
+	
+	for(var i = 0 ; i < menubuttons.length ; i++){
+		menubuttons[i].style.backgroundColor = "#D6CCC2";
+	}//for
+	for(var i = 0 ; i < themebuttons.length ; i++){
+		themebuttons[i].style.backgroundColor = "#e3d5ca";
+	}//for
+	
 }//marshamallowTheme
 
 document.querySelector('#forest').addEventListener("click",forestTheme);
@@ -103,18 +101,18 @@ function forestTheme(){
 	menubuttons = document.querySelector('#menu').getElementsByTagName('input');
 	themebuttons = document.querySelector('#theme').getElementsByTagName('input');
 	
-	for(var i = 0 ; i < menubuttons.length ; i++){
-		menubuttons[i].style.backgroundColor = "#99a376";
-	}
-	for(var i = 0 ; i < themebuttons.length ; i++){
-		themebuttons[i].style.backgroundColor = "#A79D8B";
-	}
-	
 	document.querySelector('#currentTheme').innerHTML = "Currently using Forest Theme";
 	
 	document.querySelector('body').style.backgroundColor = "#bac29f";
 	
 	document.querySelector('#factbox').style.backgroundColor = "#9c6330";
 	document.querySelector('#factbox').style.borderColor = "#855326";
+	
+	for(var i = 0 ; i < menubuttons.length ; i++){
+		menubuttons[i].style.backgroundColor = "#99a376";
+	}//for
+	for(var i = 0 ; i < themebuttons.length ; i++){
+		themebuttons[i].style.backgroundColor = "#A79D8B";
+	}//for
 	
 }//forestTheme
